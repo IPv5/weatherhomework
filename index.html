@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Weather API</title>
+</head>
+
+<body>
+    <div class="container" style="float: left;">
+        <div class="searchBar" style="padding-left: 8px;">
+            <h2>Search for City:</h2>
+            <input type="text" class="form-control" placeholder="City Name" id="searchEntry" style="width: 150px;">
+            <button id="submitCity" class="btn btn-primary">Search</button>
+        </div>
+        <div class="d-flex flex-column bd-highlight mb-3 historyButtonDiv">
+        </div>
+    </div>
+    <div class="container" style="float: right;">
+        <div class="row">
+            <div class="weatherInfo">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title currentDayDate">Current City/date</h5>
+                        <p class="card-text currentDayTemp">Temp:</p>
+                        <p class="card-text currentDayHumidity">Humidity:</p>
+                        <p class="card-text currentDayWindSpeed">Wind Speed:</p>
+                        <p class="card-text">UV Index:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="float: right;">
+        <h1>5-Day Forecast:</h1>
+        <div class="forecast">
+            <div class="row" style="padding-top: 5px; float: center;">
+                <div class="card text-white bg-dark mb-3" style="max-width: 12rem;max-height: 13rem;">
+                    <div class="card-header weatherDate-0">Current date</div>
+                    <div class="card-body">
+                        <p class="card-text weatherTemp-0">Temp:</p>
+                        <p class="card-text weatherHumidity-0">Humidity:</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-3" style="max-width: 12rem;max-height: 13rem;">
+                    <div class="card-header weatherDate-1">Current date</div>
+                    <div class="card-body">
+                        <p class="card-text weatherTemp-1">Temp:</p>
+                        <p class="card-text weatherHumidity-1">Humidity:</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-3" style="max-width: 12rem;max-height: 13rem;">
+                    <div class="card-header weatherDate-2">Current date</div>
+                    <div class="card-body">
+                        <p class="card-text weatherTemp-2">Temp:</p>
+                        <p class="card-text weatherHumidity-2">Humidity:</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-3" style="max-width: 12rem;max-height: 13rem;">
+                    <div class="card-header weatherDate-3">Current date</div>
+                    <div class="card-body">
+                        <p class="card-text weatherTemp-3">Temp:</p>
+                        <p class="card-text weatherHumidity-3">Humidity:</p>
+                    </div>
+                </div>
+
+                <div class="card text-white bg-dark mb-3" style="max-width: 12rem;max-height: 13rem;">
+                    <div class="card-header weatherDate-4">Current date</div>
+                    <div class="card-body">
+                        <p class="card-text weatherTemp-4">Temp:</p>
+                        <p class="card-text weatherHumidity-4">Humidity:</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="assets/script.js"></script>
+
+</body>
+
+</html>
