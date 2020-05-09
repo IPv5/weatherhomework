@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     function getSearchCityData(city) {
         // var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + city + "&units=imperial" + "&appid=e608601503792398e6b798711ad0c1a0";
-        var queryURL = "http://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&units=imperial&cnt=5" + "&appid=166a433c57516f51dfab1f7edaed8413";
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast/daily?q=" + city + "&units=imperial&cnt=5" + "&appid=166a433c57516f51dfab1f7edaed8413";
         $.ajax({
             url: queryURL,
             method: "GET"
